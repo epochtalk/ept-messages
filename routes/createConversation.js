@@ -28,7 +28,7 @@ module.exports = {
     validate: {
       payload: {
         receiver_id: Joi.string().required(),
-        body: Joi.string().min(1).required()
+        body: Joi.string().min(1).max(5000).required()
       }
     },
     pre: [
