@@ -34,7 +34,7 @@ module.exports = {
       payload: {
         conversation_id: Joi.string().required(),
         receiver_id: Joi.string().required(),
-        body: Joi.string().min(1).required()
+        body: Joi.string().min(1).max(5000).required()
       }
     },
     pre: [
