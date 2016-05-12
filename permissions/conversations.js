@@ -34,7 +34,17 @@ var moderator = {
   messages: { allow: true }
 };
 
+var patroller = {
+  create: { allow: true },
+  messages: { allow: true }
+};
+
 var user = {
+  create: { allow: true },
+  messages: { allow: true }
+};
+
+var newbie = {
   create: { allow: true },
   messages: { allow: true }
 };
@@ -58,7 +68,9 @@ module.exports = {
     administrator: administrator,
     globalModerator: globalModerator,
     moderator: moderator,
+    patroller: patroller,
     user: user,
+    newbie: newbie,
     banned: banned,
     anonymous: {},
     private: {}

@@ -58,12 +58,27 @@ var moderator = {
   findUser: { allow: true }
 };
 
+var patroller = {
+  create: { allow: true },
+  delete: { allow: true },
+  latest: { allow: true },
+  findUser: { allow: true }
+};
+
 var user = {
   create: { allow: true },
   delete: { allow: true },
   latest: { allow: true },
   findUser: { allow: true }
 };
+
+var newbie = {
+  create: { allow: true },
+  delete: { allow: true },
+  latest: { allow: true },
+  findUser: { allow: true }
+};
+
 
 var banned = {
   create: { allow: true },
@@ -89,7 +104,9 @@ module.exports = {
     administrator: administrator,
     globalModerator: globalModerator,
     moderator: moderator,
+    patroller: patroller,
     user: user,
+    newbie: newbie,
     banned: banned,
     anonymous: {},
     private: {}
