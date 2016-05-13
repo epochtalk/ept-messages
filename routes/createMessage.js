@@ -55,7 +55,7 @@ module.exports = {
         type: 'message',
         sender_id: request.auth.credentials.id,
         receiver_id: request.payload.receiver_id,
-        channel: '/u/' + request.payload.receiver_id,
+        channel: { type: 'user', id: request.payload.receiver_id },
         data: {
           id: messageClone.id
         }
