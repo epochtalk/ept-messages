@@ -55,7 +55,9 @@ module.exports = {
         receiver_id: request.payload.receiver_id,
         channel: { type: 'user', id: request.payload.receiver_id },
         data: {
-          id: messageClone.id
+          action: 'newMessage',
+          messageId: messageClone.id,
+          conversationId: messageClone.conversation_id
         }
       };
       request.server.plugins.notifications.spawnNotification(notification);
