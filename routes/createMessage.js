@@ -30,6 +30,7 @@ module.exports = {
   config: {
     app: { user_id: 'payload.receiver_id' },
     auth: { strategy: 'jwt' },
+    plugins: { track_ip: true },
     validate: {
       payload: {
         conversation_id: Joi.string().required(),
