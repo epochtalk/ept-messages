@@ -1,6 +1,6 @@
 {
   "name": "ept-messages",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Default Epochtalk Messages",
   "main": "index.js",
   "scripts": {
